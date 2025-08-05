@@ -7,7 +7,7 @@ import dotenv from 'dotenv';
 import newsRoutes from './routes/homepage/news.js';
 //const newsRoutes = require('./routes/homepage/news');
 //const indicesRoutes = require('./routes/homepage/indices');
-
+import { db } from './config/db.js'; // Importing the database connection
 dotenv.config();
 
 const app = express();
@@ -15,6 +15,7 @@ const app = express();
 // Middleware
 app.use(cors());
 app.use(express.json());
+
 
 // Routes
 app.use('/api/homepage/news', newsRoutes);

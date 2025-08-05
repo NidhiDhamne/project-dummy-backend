@@ -8,7 +8,7 @@
 //     //console.log(data)
 // });
 // finnhubClient.marketNews("general", {}, (error, data, response) => {
-//     console.log(data)
+//     //console.log(data)
 // });
 // function getstockData(stockSymbol) {
 //     finnhubClient.quote(stockSymbol,(error, data, response) =>{

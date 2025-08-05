@@ -7,3 +7,4 @@ module.exports = {
   yahooFinanceApiKey: process.env.YAHOO_FINANCE_API_KEY,  // If you have one
   port: process.env.PORT || 5000,
 };
+
