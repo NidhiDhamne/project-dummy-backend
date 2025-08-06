@@ -1,26 +1,3 @@
-// import dotenv from 'dotenv'
-// dotenv.config();
-// import finnhub from 'finnhub';
-
-// const finnhubClient = new finnhub.DefaultApi("d26a4spr01qh25lmj2bgd26a4spr01qh25lmj2c0");
-// //Financials
-// finnhubClient.financialsReported({"symbol": "AAPL"}, (error, data, response) => {
-//     //console.log(data)
-// });
-// finnhubClient.marketNews("general", {}, (error, data, response) => {
-//     //console.log(data)
-// });
-// function getstockData(stockSymbol) {
-//     finnhubClient.quote(stockSymbol,(error, data, response) =>{
-//         //console.log("third print");
-//         //console.log(data);
-//     })
-// }
-
-// getstockData("AAPL");
-
-// routes/homepage/index.js
-
 import express from 'express';
 const router = express.Router();
 const indicesController = require('../../controllers/homepage/indicesController');

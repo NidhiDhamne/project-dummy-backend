@@ -1,5 +1,5 @@
 // controllers/homepage/newsController.js
-import { getMarketNews } from '../../services/finnhubService.js';
+import { getMarketNews } from '../../services/MarketNews.Service.js';
 import { shuffleArray } from '../../utils/shuffle.js';
 
 export const getMarketNewsData = async (req, res) => {
@@ -14,10 +14,7 @@ export const getMarketNewsData = async (req, res) => {
     const top10News = shuffledNews.slice(0, 10);
     
     // Send the shuffled top 10 news articles in the response
-    res.json({
-      message: "Top 10 randomized news fetched successfully",
-      data: top10News
-    });
+    res.json(top10News);
   } catch (error) {
     // Handle errors by sending a response with an error message
     res.status(500).json({

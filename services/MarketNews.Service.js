@@ -1,10 +1,5 @@
 // services/finnhubService.js
-
-import finnhub from 'finnhub';
-
-import dotenv from 'dotenv';
-dotenv.config();
-const finnhubClient = new finnhub.DefaultApi('d26a4spr01qh25lmj2bgd26a4spr01qh25lmj2c0');
+import { finnhubClient } from "../config/finnhub.config.js";
 
 export const getMarketNews = (category = 'general') => {
   return new Promise((resolve, reject) => {
