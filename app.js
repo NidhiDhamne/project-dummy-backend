@@ -7,8 +7,8 @@ import dotenv from 'dotenv';
 import newsRoutes from './routes/homepage/news.js';
 import trendingRoutes from './routes/homepage/trending.js';
 import financials from './routes/homepage/financials.js'
-//const newsRoutes = require('./routes/homepage/news');
-//const indicesRoutes = require('./routes/homepage/indices');
+
+
 import { db } from './config/db.js'; // Importing the database connection
 dotenv.config();
 
